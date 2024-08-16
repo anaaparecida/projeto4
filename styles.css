@@ -4,12 +4,11 @@
     --botao-azul: #167BF7;
     --cor-de-fundo: #00030C;
 }
-
 body {
     background-color: var(--cor-de-fundo);
     color: var(--branco-principal);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
-
 * {
     margin: 0;
     padding: 0;
@@ -19,11 +18,8 @@ body {
     background-image: url("Background.png");
     background-repeat: no-repeat;
     background-size: contain;
-    grid-template-columns: 50% 50%;
-}
-
-.container {
-    height: 100vh;
+    align-items: center;
+    text-align: center;
 }
 
 .container__botao {
@@ -35,10 +31,17 @@ body {
     text-decoration: none;
     margin-bottom: 1em;
 }
-
+.container {
+    height: 100vh;
+    display: grid;  
+    grid-template-columns: 50% 50%;
+}
 .botao_secundario {
     background-color: transparent;
     border: 2px solid var(--branco-principal)
+}
+.container__imagem {
+    margin: 1em 0 2em 0;
 }
 .container__caixa {
     margin: 0 6em;
